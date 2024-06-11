@@ -1,13 +1,16 @@
 {
-  "name": "mailer",
-  "version": "1.2.3",
-  "description": "A simple mailer service to trigger mail on service down and send DMS report",
+  "name": "mail_alert",
+  "version": "1.0.0",
+  "description": "mailer",
   "main": "index.js",
-  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Shubham Kumar",
+  "repository": {
+    "type": "git",
+    "url": "NA"
+  },
+  "author": "Khan",
   "license": "ISC",
   "dependencies": {
     "dotenv": "^16.4.5",

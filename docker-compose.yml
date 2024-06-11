@@ -1,0 +1,35 @@
+version: '3'
+services:
+  mailer:
+    build: 
+      context: .  # (current directory)
+      dockerfile: Dockerfile
+    
+    image: mailer:v1.3
+    network_mode: host
+    container_name: mailer
+    restart: always
+    volumes:
+      - /etc/localtime:/etc/localtime
+    security_opt:
+      - no-new-privileges
+
+    # environment:
+    #   - SERVICE_HOST=value
+    #   - SERVICE_PORT=
+    #   - SENDER=
+    #   - RECEIVERS=
+    #   - SMTP_HOST= 
+    #   - SMTP_PORT=
+    #   - SMTP_USER=
+    #   - SMTP_PASSWORD=
+    #   - SERVICE_CRON_EXPRESSION=
+    #   - DMS_CRON_EXPRESSION=
+    #   - MONGO_URI=
+
+    #  stdin_open: true
+    #  tty: true
+
+  #   extra_hosts:  
+  #      - "mongo.prv:IP"
+
