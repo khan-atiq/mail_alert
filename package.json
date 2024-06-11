@@ -7,7 +7,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Shubham Kumar",
+  "author": "Atiq",
   "license": "ISC",
   "dependencies": {
     "dotenv": "^16.4.5",
